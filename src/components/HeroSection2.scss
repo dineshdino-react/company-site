@@ -1,0 +1,155 @@
+.home__hero-section2 {
+    background-color:#FFDD1F;
+    padding-top: 100px;
+  }
+  
+  .home__hero-row {
+    align-items: center;
+  }
+ 
+  .row {
+    display: flex;
+    margin-right: -15px;
+    margin-left: -15px;
+    flex-wrap: wrap;
+    align-content: stretch;
+  }
+  
+  .col {
+    margin-bottom: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 1;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  
+  .home__hero-text-wrapper {
+    max-width: 540px;
+    padding-top: 0;
+    padding-bottom: 60px;
+  }
+  
+  .top-line1 {
+    color: #1B181C;
+    font-size: 24px;
+    line-height: 16px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+   text-transform: capitalize;
+    margin-bottom: 16px;
+  }
+  .Navbar-icon{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    margin-left: 20px;
+  }
+  .heading1{
+    margin-bottom: 24px;
+    font-size: 54px;
+    line-height: 72px;
+    font-weight: 600;
+    color: #1B181C;
+    width: 100%;
+  
+  }
+  
+  .dark1 {
+    color: #1B181C;
+  }
+  
+  .darkBg {
+    background-color: #1B181C;
+  }
+  
+  .home__hero-subtitle2 {
+    width: 100%;
+    font-size: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 28px;
+  }
+  
+  .home__hero-img-wrapper {
+    max-width: 555px;
+    
+  }
+  
+  .home__hero-img1 {
+    max-width: 95%;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 10px;
+    padding-right: 0;
+  }
+  .shine {
+	position: relative;
+	overflow: hidden;
+
+	&::before {
+		background: linear-gradient(
+			to right,
+			fade_out(#fff, 1) 0%,
+			fade_out(#fff, 0.7) 100%
+		);
+		content: "";
+		display: block;
+		height: 100%;
+		left: -75%;
+		position: absolute;
+		top: 0;
+		transform: skewX(-25deg);
+		width: 50%;
+		z-index: 2;
+	}
+
+	&:hover,
+	&:focus {
+		&::before {
+			animation: shine 0.85s;
+		}
+	}
+
+	@keyframes shine {
+		100% {
+			left: 125%;
+		}
+	}
+}
+
+  .home__hero-img2 {
+    max-width: 95%;
+    margin-top: 90px;
+    margin-right: 0;
+    margin-left: 18px;
+    padding-right: 0;
+  }
+  
+  
+  img {
+    border: 0;
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+  }
+  
+  @media screen and (max-width: 991px) {
+    .container {
+      padding-right: 30px;
+      padding-left: 30px;
+    }
+   
+  }
+  
+  @media screen and (max-width: 768px) {
+    .home__hero-text-wrapper {
+      padding-bottom: 65px;
+    }
+    
+    .col {
+      max-width: 100%;
+      flex-basis: 100%;
+    }
+  }
+  
